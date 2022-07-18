@@ -107,6 +107,8 @@ span {
     /* 文字间距 */
     letter-spacing: 5px;
     color: white;
+    /* 禁止选中 */
+    user-select: none;
     /* 文字阴影 */
     text-shadow: 4px 4px 3px rgba(0, 0, 0, .1);
 }
@@ -117,6 +119,8 @@ span {
     line-height: 30px;
     text-align: center;
     margin: 20px 0;
+    /* 禁止选中 */
+    user-select: none;
     font-weight: bold;
     color: white;
     text-shadow: 4px 4px 3px rgba(0, 0, 0, .1);
@@ -157,6 +161,8 @@ span {
 .title-box h1 {
     text-align: center;
     color: white;
+    /* 禁止选中 */
+    user-select: none;
     letter-spacing: 5px;
     text-shadow: 4px 4px 3px rgba(0, 0, 0, .1);
 
@@ -222,6 +228,8 @@ button:hover {
 .btn-box p {
     height: 30px;
     line-height: 30px;
+    /* 禁止选中 */
+    user-select: none;
     font-size: 14px;
     color: white;
 
