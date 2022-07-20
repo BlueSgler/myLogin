@@ -134,6 +134,8 @@ span {
     margin: 20px auto;
     /* 设置为圆形 */
     border-radius: 50%;
+    /* 设置用户禁止选中 */
+    user-select: none;
     overflow: hidden;
     box-shadow: 4px 4px 3px rgba(0, 0, 0, .1);
 }
