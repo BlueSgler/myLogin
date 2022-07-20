@@ -93,6 +93,7 @@ span {
     left: 0;
     /* 距离大盒子顶部为0 */
     top: 0;
+    z-index: 99;
     border-radius: 4px;
     background-color: #edd4dc;
     box-shadow: 4px 4px 3px rgba(0, 0, 0, .1);
@@ -182,9 +183,12 @@ input {
     width: 60%;
     height: 40px;
     margin-bottom: 20px;
-    text-indent: 4px;
-    border: 1px solid #b0cfe9;
-    border-radius: 4px;
+    text-indent: 10px;
+    border: 1px solid #fff;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 120px;
+    /* 增加磨砂质感 */
+    backdrop-filter: blur(10px);
 }
 
 input:focus {
