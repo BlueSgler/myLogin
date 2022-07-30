@@ -79,7 +79,7 @@ span {
     /* 设置边框 */
     border: 1px solid rgba(255, 255, 255, .6);
     /* 设置盒子阴影 */
-    box-shadow: 4px 4px 3px rgba(0, 0, 0, .1);
+    box-shadow: 2px 1px 19px rgba(0, 0, 0, .1);
 }
 
 /* 滑动的盒子 */
@@ -96,7 +96,7 @@ span {
     z-index: 99;
     border-radius: 4px;
     background-color: #edd4dc;
-    box-shadow: 4px 4px 3px rgba(0, 0, 0, .1);
+    box-shadow: 2px 1px 19px rgba(0, 0, 0, .1);
     /* 动画过渡，先加速再减速 */
     transition: 0.5s ease-in-out;
 }
