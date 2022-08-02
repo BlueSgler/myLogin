@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow: hidden;
+    position: relative;
+    height: 100vh;
+    background: radial-gradient(at 107% 30%, #3d4650 75px, #4a3d50 -4%, #1c1a2e 38%);
+}
+
+
+
+.heart {
+    position: absolute;
+    z-index: 3;
+    left: 50%;
+    top: 50%;
+    width: 200px;
+    height: 200px;
+    opacity: 0;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    border-left: 3px dotted pink;
+    border-bottom: 3px dotted pink;
+    animation: myScale 4s linear 6s forwards;
+
+}
+
+.heart::before {
+    content: '';
+    width: 200px;
+    height: 200px;
+    border-right: 3px dotted pink;
+    position: absolute;
+    border-radius: 50%;
+    transform: translateX(100px);
+}
+
+.heart::after {
+    content: '';
+    width: 200px;
+    height: 200px;
+    border-top: 3px dotted pink;
+    position: absolute;
+    border-radius: 50%;
+    transform: translateY(-100px);
+}
+
+p {
+    position: absolute;
+    color: #fff;
+    display: none;
+    transform: translateX(-50%);
+    left: 50%;
+    bottom: 18%;
+    font-family: "LiSu", 隶书, "MicrosoftJhengHei", 华文细黑, STHeiti, MingLiu;
+    font-size: 36px;
+    /* 文字发光效果 */
+    text-shadow: 0 0 10px pink, 0 0 20px pink, 0 0 30px pink, 0 0 40px pink;
+}
+
+.meteor {
+    position: absolute;
+    z-index: 2;
+    /* 渐变 */
+    background: linear-gradient(to right, rgb(255, 255, 255), rgba(0, 0, 0, 0));
+    height: 2px;
+    width: 100px;
+    /* 蓝色光影 */
+    box-shadow: 0 0 -3px rgb(37, 179, 249);
+    border-radius: 30px;
+    right: 0;
+    top: 0;
+    animation: myMeteor 1s linear infinite;
+}
+
+/* 星星样式 */
+
+.star {
+    position: absolute;
+    z-index: 1;
+    width: 10px;
+    height: 10px;
+    margin: 100px auto;
+    border-radius: 50%;
+    background: radial-gradient(at 70% 30%, rgb(246, 243, 243) 1px, #fbfdff -4%, #eeeef4 38%);
+    /* 蓝色光影 */
+    box-shadow: 0 0 6px 1px rgb(37, 179, 249);
+    animation: myStar 5s linear forwards;
+}
+
+/* 繁星点点动画 */
+
+@keyframes myStar {
+    0% {
+        opacity: .5;
+    }
+
+    25% {
+        transform: translateX(-50%);
+    }
+
+    50% {
+        opacity: .8;
+        transform: translateY(50%);
+    }
+
+    75% {
+        transform: translateX(30%);
+    }
+
+    90% {
+        opacity: .9;
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(-20%);
+    }
+
+}
+
+/* 流星划过动画 */
+
+@keyframes myMeteor {
+    0% {
+        transform: translate(-320%, 12000%) rotate(-30deg);
+
+    }
+
+    25% {
+        transform: translate(-535%, 17000%) rotate(-30deg);
+    }
+
+    100% {
+        transform: translate(-795%, 24500%) rotate(-30deg);
+    }
+}
+
+/* 缩放动画 */
+@keyframes myScale {
+
+    0% {
+        opacity: .5;
+        transform: translate(-50%, -50%) rotate(-45deg) scale(1);
+    }
+
+    25% {
+        opacity: 1;
+        transform: translate(-50%, -50%) rotate(-45deg) scale(1.5);
+    }
+
+    50% {
+        opacity: 1;
+        transform: translate(-50%, -50%) rotate(-45deg) scale(1);
+    }
+
+    75% {
+        opacity: 1;
+        transform: translate(-50%, -50%) rotate(-45deg) scale(1.5);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(-50%, -50%) rotate(-45deg) scale(1);
+    }
+}
