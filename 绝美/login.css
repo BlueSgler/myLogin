@@ -85,7 +85,8 @@ span {
 /* 滑动的盒子 */
 .pre-box {
     /* 宽度为大盒子的一半 */
-    width: calc(1050px / 2);
+    width: 50%;
+    /* width: var(--width); */
     height: 100%;
     /* 绝对定位 */
     position: absolute;

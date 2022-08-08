@@ -1,7 +1,7 @@
 <template>
   <!-- 最外层的大盒子 -->
   <div class="bigBox">
-    <div class="box">
+    <div class="box" ref="box">
       <!-- 滑动盒子 -->
       <div class="pre-box">
         <h1>WELCOME</h1>
@@ -99,10 +99,11 @@
 <script setup>
 import { Lock, User } from '@element-plus/icons-vue'
 import mySwitch from '@/utils/mySwitch'
-import { reactive, ref } from '@vue/reactivity'
+import { reactive, ref } from 'vue'
 import api from '@/api/login.js'
 import { ElMessage } from 'element-plus'
 import { useRouter } from 'vue-router'
+import { onMounted } from '@vue/runtime-core'
 const loginForm = reactive({
   username: '',
   password: ''
@@ -203,7 +204,7 @@ input {
 /* 滑动的盒子 */
 .pre-box {
   /* 宽度为大盒子的一半 */
-  width: calc(1050px / 2);
+  width: 50%;
   height: 100%;
   /* 绝对定位 */
   position: absolute;
