@@ -1,0 +1,79 @@
+{
+  "id": "3577528",
+  "name": "red",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "523993",
+      "name": "成功-表情",
+      "font_class": "chenggongbiaoqing",
+      "unicode": "e631",
+      "unicode_decimal": 58929
+    },
+    {
+      "icon_id": "524006",
+      "name": "无空-表情",
+      "font_class": "wukongbiaoqing",
+      "unicode": "e639",
+      "unicode_decimal": 58937
+    },
+    {
+      "icon_id": "17605431",
+      "name": "记录",
+      "font_class": "jilu",
+      "unicode": "e810",
+      "unicode_decimal": 59408
+    },
+    {
+      "icon_id": "17605434",
+      "name": "阅读",
+      "font_class": "yuedu",
+      "unicode": "e811",
+      "unicode_decimal": 59409
+    },
+    {
+      "icon_id": "17605436",
+      "name": "分类",
+      "font_class": "fenlei",
+      "unicode": "e812",
+      "unicode_decimal": 59410
+    },
+    {
+      "icon_id": "17605485",
+      "name": "设置",
+      "font_class": "shezhi",
+      "unicode": "e817",
+      "unicode_decimal": 59415
+    },
+    {
+      "icon_id": "17605491",
+      "name": "首页",
+      "font_class": "shouye",
+      "unicode": "e818",
+      "unicode_decimal": 59416
+    },
+    {
+      "icon_id": "17605492",
+      "name": "我的",
+      "font_class": "wode",
+      "unicode": "e819",
+      "unicode_decimal": 59417
+    },
+    {
+      "icon_id": "15838561",
+      "name": "arrow-left-bold",
+      "font_class": "arrow-left-bold",
+      "unicode": "e685",
+      "unicode_decimal": 59013
+    },
+    {
+      "icon_id": "15838431",
+      "name": "arrow-right",
+      "font_class": "arrow-right",
+      "unicode": "e665",
+      "unicode_decimal": 58981
+    }
+  ]
+}
