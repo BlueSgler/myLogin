@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+
+    <body>
+        <script>
+            const p = new Promise((resolve, reject) => {
+                console.log(6);
+                resolve(7)
+            })
+            const fn = async () => {
+                console.log(8);
+                setTimeout(() => {
+                    console.log(9);
+                })
+                console.log(await p);
+                console.log(10);
+            }
+            fn()
+            console.log('aaa');
+            //6 8 9 7 10
+        </script>
+    </body>
+
+</html>
